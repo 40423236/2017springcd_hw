@@ -56,8 +56,8 @@
 </v>
 </v>
 <v t="yen.20170108171733.71" a="E"><vh>@path content</vh>
-<v t="yen.20170123225841.1"><vh>@edit 20170108.md</vh></v>
-<v t="yen.20170207091131.1" a="E"><vh>@clean 20170207.md</vh>
+<v t="yen.20170123225841.1"><vh>@edit 20170222.md</vh></v>
+<v t="yen.20170207091131.1"><vh>@edit 20170301.md</vh>
 <v t="yen.20170207091131.2"><vh>ex1 - for 迴圈</vh></v>
 <v t="yen.20170207091131.3"><vh>ex2 - input 與單位換算</vh></v>
 <v t="yen.20170207091131.4"><vh>filereader</vh></v>
@@ -725,253 +725,63 @@ $(document).ready(function() {
 &lt;/body&gt;
 &lt;/html&gt;</t>
 <t tx="yen.20170207091131.1">@language md
-Title: 網際 Brython 程式執行環境
-Date: 2017-02-07 11:00
+Title: 2017/03/01 W2
+Date: 2017-03-01 22:10
 Category: Course
-Tags: brython, w1
-Slug: brython-editor
-Author: yen
+Tags: Notes  w2
+Slug: 2017spring-cd-W2
+Author: 40423236
 
-Brython 程式環境可以用來練習許多 Python3 的簡單語法, 也可以納入 Javascript 程式庫, 利用 Ajax 模式結合網際瀏覽器與伺服器上的資源解決協同產品設計流程上的問題.
-
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-&lt;!-- 導入 FileSaver 與 filereader --&gt;
-&lt;script type="text/javascript" src="./../ace/FileSaver.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="./../ace/filereader.js"&gt;&lt;/script&gt;
-
-&lt;!-- 導入 Brython 標準程式庫 --&gt;
-&lt;!-- &lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
-&lt;/script&gt; --&gt;
-
-&lt;!-- 為了讓 import script1 可以正確運行, 停留在 Brython 3.2.9 版 --&gt;
-
-&lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/3.2.9/www/src/brython_dist.js"&gt;
-&lt;/script&gt;
-
-&lt;!-- 啟動 Brython --&gt;
-&lt;script&gt;
-window.onload=function(){
-brython(1);
-}
-&lt;/script&gt;
-
-&lt;!-- 以下執行 Brython 程式 --&gt;
-
-列出 2017 Spring 協同產品設計實習課程日期之 Python 程式碼如下:
-
+##分組座位程式碼
 &lt;pre class="brush: python"&gt;
-&lt;div id="cal2"&gt;&lt;/div&gt;
-&lt;script type="text/python3"&gt;
-from browser import document, html
-import calendar
-import locale
-
-cal2 = document["cal2"]
-
-def getClassdate(year=2017, startM=2, startD=20, w=0, note=""):
-    # w=0 表示課程排在星期一
-    # startM 表示開學月份, startD 表示開學日
-    # note 為課程初始告示
-    # default calendar MONDAY is the first day of the week
-    # 每學期共有 18 週
-    totalW = 18
-    count = 0
-    # output = "2017 Spring 2bCD (三) 08:10-12:00 各週上課日期: "
-    output = note + html.BR()
-    # 若必須全年搜尋則 7 改為 12, 但是因為只有 18 週, 因此邏輯要修改讓程式較快結束
-    for month in range(startM, 7):
-        monthArray = calendar.monthcalendar(2017, month)
-        for week in range(len(monthArray)):
-            weekArray = monthArray[week]
-            # 只需要列出星期 (w+1)
-            if weekArray[w] != 0:
-                if month == startM:
-                    if weekArray[startM] &gt; startD:
-                        count += 1
-                        if count &lt;= totalW:
-                            if month == 3 and weekArray[w] == 31:
-                                output += "w"+str(count)+"-"+ str(month)+ "/" + str(weekArray[w]) + "(放假), "
-                            else:
-                                output += "w"+str(count)+"-"+ str(month)+ "/" + str(weekArray[w]) + ", "
-                else:
-                    count += 1
-                    if count &lt;=  totalW:
-                        if month == 3 and weekArray[w] == 31:
-                            output += "w"+str(count)+"-"+ str(month)+ "/" + str(weekArray[w]) + "(放假), "
-                        else:
-                            output += "w"+str(count)+"-"+ str(month)+ "/" + str(weekArray[w]) + ", "
-    cal2 &lt;= output
-
-# 2b 協同產品設計實習 (三 w=2)
-getClassdate(year=2017, startM=2, startD=20, w=2, note="2017 Spring 2bCD (三) 08:10-12:00 各週上課日期: ")
-cal2 &lt;= html.BR() + html.BR()
-# 2a 協同產品設計實習 (四 w=3)
-getClassdate(year=2017, startM=2, startD=20, w=3, note="2017 Spring 2aCD (四) 08:10-12:00 各週上課日期: ")
-cal2 &lt;= html.BR() + html.BR()
-# 1a 網際內容管理 (五 w=4)
-getClassdate(year=2017, startM=2, startD=20, w=4, note="2017 Spring 1aWCM (五) 13:20-16:10 各週上課日期: ")
-cal2 &lt;= html.BR() + html.BR()
-# VE1a 網際內容管理 (五 w=4)
-getClassdate(year=2017, startM=2, startD=20, w=4, note="2017 Spring VE1aCP (五) 18:30-20:00 各週上課日期: ")
-cal2 &lt;= html.BR() + html.BR()
-&lt;/script&gt;
+#import os
+adata = open("w2b_cadlab.txt", encoding="utf-8").read()
+#讀取w2b_cadlab.txt 檔案,讓裡面的內容成為資料, 因為檔案裡有中文, 所以設定encoding 使用utf-8 的編驛碼
+rdata = open("w2b_registered.txt", encoding="utf-8").read().splitlines()
+#print(adata)
+#用print 先檢查資料是否是我們需要的
+alist = adata.splitlines()
+#利用splitlines 的方法把資料隔開, 就可以得到一個特定的數列
+#print(alist[2])
+n = 0
+row = 0
+final_list = []
+w2_list = []
+for stud_num in alist[2:]:
+#從第2列開始, 因為第0列和第1列都不是我們要的
+    row = row + 1
+    blist = stud_num.split("\t")
+    #print(blist)
+    column = 0
+    #為了避免序號連續, 利用column = 0 將順序重製, 因為每一列算完之後要換下一列重新開始
+    for i in range(len(blist)):
+        column = column + 1
+        if blist[i] != "":
+            #print(blist[i])
+            clist = blist[i].split("_")
+            stud_data = clist[0]+"_"+clist[1]+"_"+str(row)+"_"+str(column)
+            final_list.append(stud_data)
+            w2_list.append(clist[1])
+            n = n +1
+# 根據數列前導字串排序, 目的在建立分組數列
+group_list = sorted(final_list)
+print("分組名單:")
+for i in range(len(group_list)):
+    print(group_list[i])
+print("座位列表:")
+for i in range(len(final_list)):
+    print(final_list[i])
+for i in range(len(rdata)):
+    if rdata[i] not in w2_list:
+        print("缺席學生:", rdata[i])
+print("學生總數:", n)
+#print(os.environ)
 &lt;/pre&gt;
 
-### 利用伺服器執行 Python3 程式
+&lt;p&gt;用solvespace畫出四連桿機構，再觀察其運動方式&lt;iframe src="https://player.vimeo.com/video/208427107" width="640" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/208427107"&gt;四連桿組立&lt;/a&gt; from &lt;a href="https://vimeo.com/user61607351"&gt;NFU-MDE-104B-40423236&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 
-Jupyterhub: &lt;a href="https://8888.kmol.info:9443"&gt;https://8888.kmol.info:9443&lt;/a&gt;
-
-### 利用以下的編輯器執行 Python3 程式
-
-在 Firefox 中, 以 Preferences - General - Downloads 選擇"Always ask me where to save files"
-
-在 Chrome 中, 以 Settings - Advanced - Downloads 選擇 Ask where to save each file before downloading
-
-&lt;script src="./../ace/ace.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
-&lt;script src="./../ace/ext-language_tools.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
-&lt;script src="./../ace/mode-python3.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
-&lt;script src="./../ace/snippets/python.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
-&lt;!-- 請注意, 這裡使用 Javascript 將 localStorage["py_src"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--&gt;
-&lt;script type="text/javascript"&gt;
-function doSave(){
-    var blob = new Blob([localStorage["py_src"]], {type: "text/plain;charset=utf-8"});
-    filename = document.getElementById('filename').value
-    saveAs(blob, filename+".py");
-}
-&lt;/script&gt;
-
-&lt;script type="text/python3" id="script1"&gt;
-import sys
-import time
-import traceback
-import javascript
-
-from browser import document as doc, window, alert
-
-has_ace = True
-try:
-    editor = window.ace.edit("editor")
-    session = editor.getSession()
-    session.setMode("ace/mode/python")
-
-    editor.setOptions({
-     'enableLiveAutocompletion': True,
-     'enableSnippets': True,
-     'highlightActiveLine': False,
-     'highlightSelectedWord': True
-    })
-except:
-    from browser import html
-    editor = html.TEXTAREA(rows=20, cols=70)
-    doc["editor"] &lt;= editor
-    def get_value(): return editor.value
-    def set_value(x):editor.value = x
-    editor.getValue = get_value
-    editor.setValue = set_value
-    has_ace = False
-
-if hasattr(window, 'localStorage'):
-    from browser.local_storage import storage
-else:
-    storage = None
-
-def reset_src():
-    if storage is not None and "py_src" in storage:
-        editor.setValue(storage["py_src"])
-    else:
-        editor.setValue('for i in range(10):\n\tprint(i)')
-    editor.scrollToRow(0)
-    editor.gotoLine(0)
-
-def reset_src_area():
-    if storage and "py_src" in storage:
-        editor.value = storage["py_src"]
-    else:
-        editor.value = 'for i in range(10):\n\tprint(i)'
-
-class cOutput:
-
-    def __init__(self,target):
-        self.target = doc[target]
-    def write(self,data):
-        self.target.value += str(data)
-        
-
-#if "console" in doc:
-sys.stdout = cOutput("console")
-sys.stderr = cOutput("console")
-
-def to_str(xx):
-    return str(xx)
-
-info = sys.implementation.version
-doc['version'].text = 'Brython %s.%s.%s' % (info.major, info.minor, info.micro)
-
-output = ''
-
-def show_console(ev):
-    doc["console"].value = output
-    doc["console"].cols = 60
-    doc["console"].rows = 10
-
-# load a Python script
-def load_script(evt):
-    _name = evt.target.value + '?foo=%s' % time.time()
-    editor.setValue(open(_name).read())
-
-# run a script, in global namespace if in_globals is True
-def run(*args):
-    global output
-    doc["console"].value = ''
-    src = editor.getValue()
-    if storage is not None:
-       storage["py_src"] = src
-
-    t0 = time.perf_counter()
-    try:
-        #ns = {'__name__':'__main__'}
-        ns = {'__name__':'editor'}
-        exec(src, ns)
-        state = 1
-    except Exception as exc:
-        traceback.print_exc(file=sys.stderr)
-        state = 0
-    output = doc["console"].value
-
-    print('&lt;completed in %6.2f ms&gt;' % ((time.perf_counter() - t0) * 1000.0))
-    return state
-
-if has_ace:
-    reset_src()
-else:
-    reset_src_area()
-    
-def clear_console(ev):
-    doc["console"].value = ""
-
-doc['run'].bind('click',run)
-doc['show_console'].bind('click',show_console)
-doc['clear_console'].bind('click',clear_console)
-&lt;/script&gt;
-
-&lt;div id="version"&gt;&lt;/div&gt;
-&lt;div id="editor" style="width:600px;height:300px;"&gt;&lt;/div&gt;
-
-&lt;!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --&gt;
-
-&lt;form&gt;
-    &lt;label&gt;Filename: &lt;input type="text" id="filename" placeholder="input file name"/&gt;.py&lt;/label&gt;
-    &lt;input type="submit" value="Save" onclick="doSave();"/&gt;
-&lt;/form&gt;
-&lt;button id="run"&gt;Run&lt;/button&gt;
-&lt;button id="show_console"&gt;Output&lt;/button&gt;
-&lt;button id="clear_console"&gt;清除&lt;/button&gt;
-&lt;div style="width:100%;height:100%;"&gt;
-&lt;textarea id="console" autocomplete="off"&gt;&lt;/textarea&gt;
-&lt;/div&gt;
-&lt;div id="common"&gt;&lt;/div&gt;
-@others</t>
+&lt;p&gt;心得:這週的作業是用solvespace畫四連桿機構，不算難，是這次協同課程的前菜。&lt;/p&gt;</t>
 <t tx="yen.20170207091131.2">
 &lt;script type="text/python3"&gt;
 from browser import document as doc
