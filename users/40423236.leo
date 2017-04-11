@@ -27,17 +27,38 @@
 <v t="yen.20170215103332.1"><vh>@edit base.html</vh></v>
 </v>
 </v>
-<v t="yen.20170120110024.1"><vh>@clean index.html</vh>
+<v t="yen.20170120110024.1" a="E"><vh>@clean index.html</vh>
 <v t="yen.20170120110024.2" a="E"><vh>html</vh>
 <v t="yen.20170120110024.3"><vh>head</vh></v>
 <v t="yen.20170120110024.4" a="E"><vh>body</vh>
 <v t="yen.20170120110024.5" a="E"><vh>reveal div</vh>
 <v t="yen.20170120110024.6" a="E"><vh>slides div</vh>
-<v t="yen.20170120110024.7" a="E"><vh>封面投影片</vh>
+<v t="yen.20170120110024.7"><vh>封面投影片</vh>
 <v t="yen.20170120110024.8"><vh>封面投影片內容</vh></v>
 </v>
-<v t="yen.20170120110024.9" a="E"><vh>快捷鍵</vh>
+<v t="yen.20170120110024.9"><vh>快捷鍵</vh>
 <v t="yen.20170120110024.10"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20170412010334.1"><vh>2017/02/22 w1上課內容</vh>
+<v t="leo.20170412010334.2" a="E"><vh>筆記</vh>
+<v t="leo.20170412010334.3"><vh>內容</vh></v>
+</v>
+</v>
+<v t="leo.20170412010402.1"><vh>2017/03/01 w2上課內容</vh>
+<v t="leo.20170412010402.2" a="E"><vh>筆記</vh>
+<v t="leo.20170412010402.3"><vh>內容</vh></v>
+</v>
+<v t="leo.20170412010402.4" a="E"><vh>筆記</vh>
+<v t="leo.20170412010402.5"><vh>內容</vh></v>
+</v>
+</v>
+<v t="leo.20170412010656.1" a="E"><vh>2017/03/08 w3上課內容</vh>
+<v t="leo.20170412010656.2" a="E"><vh>筆記</vh>
+<v t="leo.20170412010656.3"><vh>內容</vh></v>
+</v>
+<v t="leo.20170412011324.1" a="E"><vh>筆記</vh>
+<v t="leo.20170412011324.2"><vh>內容</vh></v>
+</v>
 </v>
 <v t="yen.20170120110024.11"><vh>各式內容引用範例</vh>
 <v t="yen.20170120110024.12" a="E"><vh>導入數學符號與方程式</vh>
@@ -57,13 +78,8 @@
 </v>
 <v t="yen.20170108171733.71" a="E"><vh>@path content</vh>
 <v t="yen.20170123225841.1"><vh>@edit 20170222.md</vh></v>
-<v t="yen.20170207091131.1"><vh>@edit 20170301.md</vh>
-<v t="yen.20170207091131.2"><vh>ex1 - for 迴圈</vh></v>
-<v t="yen.20170207091131.3"><vh>ex2 - input 與單位換算</vh></v>
-<v t="yen.20170207091131.4"><vh>filereader</vh></v>
-</v>
-<v t="yen.20170209092319.1"><vh>@edit 20170209.md</vh></v>
-<v t="yen.20170217105706.1"><vh>@edit 20170217.md</vh></v>
+<v t="leo.20170411234321.1"><vh>@edit 20170301.md</vh></v>
+<v t="leo.20170411234935.1"><vh>@edit 20170308.md</vh></v>
 <v t="yen.20170108171733.81"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
 </v>
@@ -92,6 +108,119 @@
 <v t="yen.20170209024032.1"><vh>reference</vh></v>
 </vnodes>
 <tnodes>
+<t tx="leo.20170412010334.1">&lt;section&gt;
+@others
+&lt;/section&gt;</t>
+<t tx="leo.20170412010334.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170412010334.3"># 2017/02/22 第一周上課內容
+
+1.這學期課程大綱
+
+2.學習使用STUNNEL
+
+3.建立小組與個人倉儲
+
+4.更改STUNNEL.CONF的IP位子設定
+
+</t>
+<t tx="leo.20170412010402.1">&lt;section&gt;
+@others
+&lt;/section&gt;</t>
+<t tx="leo.20170412010402.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170412010402.3"># 2017/03/01第二周上課內容
+
+*筆記
+
+1.tiny2017 - with_pip\data\stunnel\config的stunnel.conf檔案
+
+2.stunnel.conf移到SciTE
+
+3.程式碼前面是分號 就是註解不會執行那段程式碼
+
+4.利用cmd查IP(ipconfig /all)
+
+5.將https的IP改為電腦的IP(第138行)
+
+6.443是https內建的port號, 不用改</t>
+<t tx="leo.20170412010402.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170412010402.5">7.因為有用proxy所以要指定192.168.1.49的IP不要經過proxy
+
+8.Chrome proxy設定&gt;LAN設定&gt;進階
+
+9.2017springcd/data/onelink_vrep_remoteapi_pos_vel.7z
+
+10.使用 https://ethercalc.org/4lirnzbeh0fl寫各組座位表 
+
+11.翻譯老師交代的作業</t>
+<t tx="leo.20170412010656.1">&lt;section&gt;
+@others
+&lt;/section&gt;</t>
+<t tx="leo.20170412010656.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170412010656.3"># 2017/03/08第三周上課內容
+
+*筆記
+
+1.了解使用HYPERWORKS
+
+2.更改Start的foddil路徑
+
+3.用solvespace做出 30-50-608的四連桿機構，並組立轉出囗STL檔，再用IMPORT轉入V-REP
+
+4.用ONSHAP再次完成第3點的步驟，畫出並組立四連桿機構，以STL檔轉出，再傳入V-REP做測試
+
+</t>
+<t tx="leo.20170412011324.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170412011324.2">5.將上述四連桿機構做出運動軌跡，是否正確，並在網頁上執行運動軌跡</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
@@ -422,7 +551,8 @@ make.start()
 ### 虎科大機械設計工程系
 
 &lt;small&gt;
-Created by [KMOLab](http://chiamingyen.github.io/kmolab/blog/)
+###機設二乙  40423236 第5組 陳韋凡
+網誌 [KMOLab](https://40423236.github.io/2017springcd_hw/blog/)
 &lt;/small&gt;
 
 [協同產品設計實習課程網誌](blog/index.html)
@@ -724,146 +854,6 @@ $(document).ready(function() {
 &lt;button id="sendbutton"&gt;Send&lt;/button&gt;
 &lt;/body&gt;
 &lt;/html&gt;</t>
-<t tx="yen.20170207091131.1">@language md
-Title: 2017/03/01 W2
-Date: 2017-03-01 22:10
-Category: Course
-Tags: Notes  w2
-Slug: 2017spring-cd-W2
-Author: 40423236
-
-##分組座位程式碼
-&lt;pre class="brush: python"&gt;
-#import os
-adata = open("w2b_cadlab.txt", encoding="utf-8").read()
-#讀取w2b_cadlab.txt 檔案,讓裡面的內容成為資料, 因為檔案裡有中文, 所以設定encoding 使用utf-8 的編驛碼
-rdata = open("w2b_registered.txt", encoding="utf-8").read().splitlines()
-#print(adata)
-#用print 先檢查資料是否是我們需要的
-alist = adata.splitlines()
-#利用splitlines 的方法把資料隔開, 就可以得到一個特定的數列
-#print(alist[2])
-n = 0
-row = 0
-final_list = []
-w2_list = []
-for stud_num in alist[2:]:
-#從第2列開始, 因為第0列和第1列都不是我們要的
-    row = row + 1
-    blist = stud_num.split("\t")
-    #print(blist)
-    column = 0
-    #為了避免序號連續, 利用column = 0 將順序重製, 因為每一列算完之後要換下一列重新開始
-    for i in range(len(blist)):
-        column = column + 1
-        if blist[i] != "":
-            #print(blist[i])
-            clist = blist[i].split("_")
-            stud_data = clist[0]+"_"+clist[1]+"_"+str(row)+"_"+str(column)
-            final_list.append(stud_data)
-            w2_list.append(clist[1])
-            n = n +1
-# 根據數列前導字串排序, 目的在建立分組數列
-group_list = sorted(final_list)
-print("分組名單:")
-for i in range(len(group_list)):
-    print(group_list[i])
-print("座位列表:")
-for i in range(len(final_list)):
-    print(final_list[i])
-for i in range(len(rdata)):
-    if rdata[i] not in w2_list:
-        print("缺席學生:", rdata[i])
-print("學生總數:", n)
-#print(os.environ)
-&lt;/pre&gt;
-
-&lt;p&gt;用solvespace畫出四連桿機構，再觀察其運動方式&lt;iframe src="https://player.vimeo.com/video/208427107" width="640" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;a href="https://vimeo.com/208427107"&gt;四連桿組立&lt;/a&gt; from &lt;a href="https://vimeo.com/user61607351"&gt;NFU-MDE-104B-40423236&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;心得:這週的作業是用solvespace畫四連桿機構，不算難，是這次協同課程的前菜。&lt;/p&gt;</t>
-<t tx="yen.20170207091131.2">
-&lt;script type="text/python3"&gt;
-from browser import document as doc
-import script1
-
-def ex1(ev):
-    script1.editor.setValue('''#ex1 簡單的 for 迴圈範例
-    for i in range(10):
-        print(i)
-    ''')
-    script1.editor.scrollToRow(0)
-    script1.editor.gotoLine(0)
-doc['ex1'].bind('click',ex1)
-&lt;/script&gt;&lt;a id="ex1"&gt;ex1&lt;/a&gt;-for 迴圈
-</t>
-<t tx="yen.20170207091131.3">
-&lt;script type="text/python3"&gt;
-from browser import document as doc
-import script1
-
-def ex2(ev):
-    script1.editor.setValue('''#溫度轉換程式
-from browser import document as doc
-
-# 因為此函式與滑鼠互動, 需要 event 當作輸入
-def convTemp():
-    mystring = ""
-    cdegree = input("請輸入攝氏溫度:")
-    fdegree = float(cdegree)*9/5 + 32
-    output_string = "攝氏 " + str(cdegree) + "度=華氏 " + str(fdegree) + "度" 
-    # 利用 print() 將轉換結果送到 console 區
-    print(output_string)
-
-#直接呼叫 convTemp() 執行
-convTemp()
-    ''')
-    script1.editor.scrollToRow(0)
-    script1.editor.gotoLine(0)
-doc['ex2'].bind('click',ex2)
-&lt;/script&gt;&lt;a id="ex2"&gt;ex2&lt;/a&gt;-溫度換算</t>
-<t tx="yen.20170207091131.4">
-&lt;script type="text/python3"&gt;
-from browser import document
-import script1
-
-def get_file(e):
-    data = open("./../python_ex/for1.py").read()
-    script1.editor.setValue(data)
-    script1.editor.scrollToRow(0)
-    script1.editor.gotoLine(0)
-    
-document["get"].bind("click", get_file)
-&lt;/script&gt;
-
-&lt;script type="text/python3"&gt;
-from browser import document
-import script1
-
-def get_temp1(e):
-    data = open("./../python_ex/temp1.py").read()
-    script1.editor.setValue(data)
-    script1.editor.scrollToRow(0)
-    script1.editor.gotoLine(0)
-    
-document["get_temp1"].bind("click", get_temp1)
-&lt;/script&gt;
-
-&lt;script type="text/python3"&gt;
-from browser import document
-import script1
-
-def get_ver_and_kw(e):
-    data = open("./../python_ex/ver_and_kw.py").read()
-    script1.editor.setValue(data)
-    script1.editor.scrollToRow(0)
-    script1.editor.gotoLine(0)
-    
-document["get_ver_and_kw"].bind("click", get_ver_and_kw)
-&lt;/script&gt;
-
-&lt;button id="get"&gt;for1.py&lt;/button&gt;&lt;button id="get_temp1"&gt;temp1.py&lt;/button&gt;&lt;button id="get_ver_and_kw"&gt;ver_and_kw.py&lt;/button&gt;
-</t>
 <t tx="yen.20170207092354.1">##利用 IPv6 網路傳輸設計檔案
 
 &lt;pre class="brush: python"&gt;
