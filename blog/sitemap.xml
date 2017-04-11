@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2017-04-12T01:32:45-00:00</lastmod>
+<lastmod>2017-04-12T01:48:08-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2017-04-12T01:32:45-00:00</lastmod>
+<lastmod>2017-04-12T01:48:08-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2017-04-12T01:32:45-00:00</lastmod>
+<lastmod>2017-04-12T01:48:08-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2017-04-12T01:32:45-00:00</lastmod>
+<lastmod>2017-04-12T01:48:08-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./pages/about/</loc>
-<lastmod>2017-04-11T23:20:43+08:00</lastmod>
+<lastmod>2017-04-12T01:43:48+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -53,8 +53,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./2017Spring-cd-W1.html</loc>
-<lastmod>2017-02-22T21:50:00+08:00</lastmod>
+<loc>./2017spring-cd-W1.html</loc>
+<lastmod>2017-02-22T15:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -75,7 +75,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./tag/notes-w1.html</loc>
-<lastmod>2017-02-22T21:50:00+08:06</lastmod>
+<lastmod>2017-02-22T15:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
