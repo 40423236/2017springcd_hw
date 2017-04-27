@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-03-22T23:25:00+08:00</updated><entry><title>2017/03/22 W5</title><link href="./2017Spring-cd-W5.html" rel="alternate"></link><published>2017-03-22T23:25:00+08:00</published><updated>2017-03-22T23:25:00+08:00</updated><author><name>40423236</name></author><id>tag:,2017-03-22:./2017Spring-cd-W5.html</id><summary type="html">&lt;p&gt;單連桿轉入v-rep&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-04-12T23:20:00+08:00</updated><entry><title>2017/04/12 W8</title><link href="./2017Spring-cd-W8.html" rel="alternate"></link><published>2017-04-12T23:20:00+08:00</published><updated>2017-04-12T23:20:00+08:00</updated><author><name>40423236</name></author><id>tag:,2017-04-12:./2017Spring-cd-W8.html</id><summary type="html">&lt;p&gt;期中個人自評、小組互評&lt;/p&gt;
+
+
+&lt;p&gt;小組互評: &lt;a href="https://pygroup-ag100.rhcloud.com"&gt;https://pygroup-ag100.rhcloud.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;個人自評: &lt;a href="http://mde1a2.kmol.info:8000/k96tgzh1ofbl"&gt;http://mde1a2.kmol.info:8000/k96tgzh1ofbl&lt;/a&gt;&lt;/p&gt;</summary><category term="Notes  w8"></category></entry><entry><title>2017/03/22 W5</title><link href="./2017Spring-cd-W5.html" rel="alternate"></link><published>2017-03-22T23:25:00+08:00</published><updated>2017-03-22T23:25:00+08:00</updated><author><name>40423236</name></author><id>tag:,2017-03-22:./2017Spring-cd-W5.html</id><summary type="html">&lt;p&gt;單連桿轉入v-rep&lt;/p&gt;
 
 
 &lt;h2&gt;將單連桿轉入v-rep進行運動模擬&lt;/h2&gt;
