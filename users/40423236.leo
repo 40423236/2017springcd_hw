@@ -52,12 +52,40 @@
 <v t="leo.20170412010402.5"><vh>內容</vh></v>
 </v>
 </v>
-<v t="leo.20170412010656.1" a="E"><vh>2017/03/08 w3上課內容</vh>
+<v t="leo.20170412010656.1"><vh>2017/03/08 w3上課內容</vh>
 <v t="leo.20170412010656.2" a="E"><vh>筆記</vh>
 <v t="leo.20170412010656.3"><vh>內容</vh></v>
 </v>
 <v t="leo.20170412011324.1" a="E"><vh>筆記</vh>
 <v t="leo.20170412011324.2"><vh>內容</vh></v>
+</v>
+</v>
+<v t="leo.20170427100102.1"><vh>2017/03/15 w4上課內容</vh>
+<v t="leo.20170427100102.2"><vh>w4-1</vh>
+<v t="leo.20170427100102.3"><vh>內容</vh></v>
+</v>
+<v t="leo.20170427100102.4"><vh>w4-2</vh>
+<v t="leo.20170427100102.5"><vh>內容</vh></v>
+</v>
+<v t="leo.20170427100102.6"><vh>w4-3</vh>
+<v t="leo.20170427100102.7"><vh>內容</vh></v>
+</v>
+<v t="leo.20170427100102.10"><vh>w4-4</vh>
+<v t="leo.20170427100102.11"><vh>內容</vh></v>
+</v>
+<v t="leo.20170427100102.14" a="E"><vh>w4-5</vh>
+<v t="leo.20170427100102.15"><vh>心得</vh></v>
+</v>
+</v>
+<v t="leo.20170427100557.1"><vh>2017/03/22 w5上課內容</vh>
+<v t="leo.20170427100557.2" a="E"><vh>w5-1</vh>
+<v t="leo.20170427100557.3"><vh>內容</vh></v>
+</v>
+<v t="leo.20170427100557.4" a="E"><vh>w5-2</vh>
+<v t="leo.20170427100557.5"><vh>內容</vh></v>
+</v>
+<v t="leo.20170427100557.6" a="E"><vh>w5-3</vh>
+<v t="leo.20170427100557.7"><vh>心得</vh></v>
 </v>
 </v>
 <v t="yen.20170120110024.11"><vh>各式內容引用範例</vh>
@@ -80,6 +108,8 @@
 <v t="leo.20170412021649.1"><vh>@edit 20170222.md</vh></v>
 <v t="leo.20170411234321.1"><vh>@edit 20170301.md</vh></v>
 <v t="leo.20170411234935.1"><vh>@edit 20170308.md</vh></v>
+<v t="leo.20170427094805.1"><vh>@edit 20170315.md</vh></v>
+<v t="leo.20170427095612.1"><vh>@edit 20170322.md</vh></v>
 <v t="yen.20170108171733.81"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
 </v>
@@ -221,6 +251,129 @@
 						
 </t>
 <t tx="leo.20170412011324.2">5.將上述四連桿機構做出運動軌跡，是否正確，並在網頁上執行運動軌跡</t>
+<t tx="leo.20170427100102.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20170427100102.10">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20170427100102.11">##單連桿onshape組立
+
+&lt;iframe src="https://player.vimeo.com/video/212802612" width="640" height="457" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/212802612"&gt;單連桿(onshape)&lt;/a&gt; from &lt;a href="https://vimeo.com/user61607351"&gt;NFU-MDE-104B-40423236&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+</t>
+<t tx="leo.20170427100102.14">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170427100102.15">##心得:v-rep的功能很多，學習更多技巧與模擬功能。
+</t>
+<t tx="leo.20170427100102.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170427100102.3">#W4 筆記內容
+
+##一.建立Fossil 將組員加入
+
+##二.繪製單連桿並轉入v-rep
+</t>
+<t tx="leo.20170427100102.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20170427100102.5">##Fossil SCM倉儲
+
+每組要在https://mde2a2.kmol.info 主機上建倉儲:https://mde2a2.kmol.info/cdbg5
+</t>
+<t tx="leo.20170427100102.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20170427100102.7">##單連桿solvespace 組立
+
+&lt;iframe src="https://player.vimeo.com/video/212797723" width="640" height="457" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/212797723"&gt;單連桿(solvespace)&lt;/a&gt; from &lt;a href="https://vimeo.com/user61607351"&gt;NFU-MDE-104B-40423236&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+</t>
+<t tx="leo.20170427100557.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20170427100557.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170427100557.3">#W5 筆記內容
+
+##一.Fossil SCM與Stunnel啟動整合
+
+##二.利用solvespace畫出的單連桿轉入V-rep並且加上馬達
+</t>
+<t tx="leo.20170427100557.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20170427100557.5">##單連桿轉入v-rep加馬達
+
+&lt;iframe src="https://player.vimeo.com/video/214883435" width="640" height="454" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/214883435"&gt;單連桿匯入v-rep加馬達&lt;/a&gt; from &lt;a href="https://vimeo.com/user61607351"&gt;NFU-MDE-104B-40423236&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+</t>
+<t tx="leo.20170427100557.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20170427100557.7">##心得:這次在V-rep加上joint(馬達)，過程中學到很多功能，成功轉動後，讓我覺得很興奮。
+
+
+</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
