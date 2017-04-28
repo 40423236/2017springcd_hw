@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>2017/03/01 W2 - 2017Spring 協同產品設計實習 (虎尾科大MDE)</title>
+    <title>2017/03/29 W6 - 2017Spring 協同產品設計實習 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,20 +10,20 @@
 
 
 
-<link rel="canonical" href="./2017Spring-cd-W2.html">
+<link rel="canonical" href="./2017Spring-cd-W6.html">
 
         <meta name="author" content="40423236" />
-        <meta name="keywords" content="Notes w2" />
-        <meta name="description" content="分組座位程式碼、四連桿機構(solvespace)繪製與觀察其運動方式" />
+        <meta name="keywords" content="Notes w6" />
+        <meta name="description" content="多連桿在v-rep上的模擬運動" />
 
         <meta property="og:site_name" content="2017Spring 協同產品設計實習 (虎尾科大MDE)" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="2017/03/01 W2"/>
-        <meta property="og:url" content="./2017Spring-cd-W2.html"/>
-        <meta property="og:description" content="分組座位程式碼、四連桿機構(solvespace)繪製與觀察其運動方式"/>
-        <meta property="article:published_time" content="2017-03-01" />
+        <meta property="og:title" content="2017/03/29 W6"/>
+        <meta property="og:url" content="./2017Spring-cd-W6.html"/>
+        <meta property="og:description" content="多連桿在v-rep上的模擬運動"/>
+        <meta property="article:published_time" content="2017-03-29" />
             <meta property="article:section" content="Course" />
-            <meta property="article:tag" content="Notes  w2" />
+            <meta property="article:tag" content="Notes  w6" />
             <meta property="article:author" content="40423236" />
 
 
@@ -131,10 +131,10 @@
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="./2017Spring-cd-W2.html"
+                    <a href="./2017Spring-cd-W6.html"
                        rel="bookmark"
-                       title="Permalink to 2017/03/01 W2">
-                        2017/03/01 W2
+                       title="Permalink to 2017/03/29 W6">
+                        2017/03/29 W6
                     </a>
                 </h1>
             </header>
@@ -144,7 +144,7 @@
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-03-01T22:10:00+08:00"> Wed 01 March 2017</time>
+        <i class="fa fa-calendar"></i><time datetime="2017-03-29T22:25:00+08:00"> Wed 29 March 2017</time>
     </span>
             <span class="label label-default">By</span>
             <a href="./author/40423236.html"><i class="fa fa-user"></i> 40423236</a>
@@ -152,70 +152,19 @@
 
 
 <span class="label label-default">Tags</span>
-	<a href="./tag/notes-w2.html">Notes  w2</a>
+	<a href="./tag/notes-w6.html">Notes  w6</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>分組座位程式碼、四連桿機構(solvespace)繪製與觀察其運動方式</p>
+                <p>多連桿在v-rep上的模擬運動</p>
 
 
-<h2>分組座位程式碼</h2>
-<pre class="brush: python">
+<h2>將多連桿轉入v-rep進行運動模擬</h2>
+<iframe src="https://player.vimeo.com/video/215154625" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-<h1>import os</h1>
-<p>adata = open("w2b_cadlab.txt", encoding="utf-8").read()</p>
-<h1>讀取w2b_cadlab.txt 檔案,讓裡面的內容成為資料, 因為檔案裡有中文, 所以設定encoding 使用utf-8 的編驛碼</h1>
-<p>rdata = open("w2b_registered.txt", encoding="utf-8").read().splitlines()</p>
-<h1>print(adata)</h1>
-<h1>用print 先檢查資料是否是我們需要的</h1>
-<p>alist = adata.splitlines()</p>
-<h1>利用splitlines 的方法把資料隔開, 就可以得到一個特定的數列</h1>
-<h1>print(alist[2])</h1>
-<p>n = 0
-row = 0
-final_list = []
-w2_list = []
-for stud_num in alist[2:]:</p>
-<h1>從第2列開始, 因為第0列和第1列都不是我們要的</h1>
-<div class="highlight"><pre><span></span>row = row + 1
-blist = stud_num.split(&quot;\t&quot;)
-#print(blist)
-column = 0
-#為了避免序號連續, 利用column = 0 將順序重製, 因為每一列算完之後要換下一列重新開始
-for i in range(len(blist)):
-    column = column + 1
-    if blist[i] != &quot;&quot;:
-        #print(blist[i])
-        clist = blist[i].split(&quot;_&quot;)
-        stud_data = clist[0]+&quot;_&quot;+clist[1]+&quot;_&quot;+str(row)+&quot;_&quot;+str(column)
-        final_list.append(stud_data)
-        w2_list.append(clist[1])
-        n = n +1
-</pre></div>
+<p><a href="https://vimeo.com/215154625">多連桿匯入v-rep加馬達</a> from <a href="https://vimeo.com/user61607351">NFU-MDE-104B-40423236</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-
-<h1>根據數列前導字串排序, 目的在建立分組數列</h1>
-<p>group_list = sorted(final_list)
-print("分組名單:")
-for i in range(len(group_list)):
-    print(group_list[i])
-print("座位列表:")
-for i in range(len(final_list)):
-    print(final_list[i])
-for i in range(len(rdata)):
-    if rdata[i] not in w2_list:
-        print("缺席學生:", rdata[i])
-print("學生總數:", n)</p>
-<h1>print(os.environ)</h1>
-</pre>
-
-<p>用solvespace畫出四連桿機構，再觀察運動方式</p>
-
-<iframe src="https://player.vimeo.com/video/208427107" width="640" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-<p><a href="https://vimeo.com/208427107">四連桿組立</a> from <a href="https://vimeo.com/user61607351">NFU-MDE-104B-40423236</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-
-<p>心得:這週的作業是用solvespace畫出四連桿機構，不算困難，算是這次協同課程的前菜。</p>
+<p>心得:這次作業是模擬多連桿運動，需要裝上joint以及設定好dummy，又學會新的東西。</p>
             </div>
             <!-- /.entry-content -->
         </article>
