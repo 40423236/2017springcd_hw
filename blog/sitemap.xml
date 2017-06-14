@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2017-06-14T09:15:02-00:00</lastmod>
+<lastmod>2017-06-14T10:50:04-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2017-06-14T09:15:02-00:00</lastmod>
+<lastmod>2017-06-14T10:50:04-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2017-06-14T09:15:02-00:00</lastmod>
+<lastmod>2017-06-14T10:50:04-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2017-06-14T09:15:02-00:00</lastmod>
+<lastmod>2017-06-14T10:50:04-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./pages/about/</loc>
-<lastmod>2017-06-14T09:02:38+08:00</lastmod>
+<lastmod>2017-06-14T10:42:44+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -116,8 +116,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/notes-w3.html</loc>
-<lastmod>2017-03-08T21:35:00+08:06</lastmod>
+<loc>./tag/notes-w1.html</loc>
+<lastmod>2017-02-22T21:35:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/notes-w8.html</loc>
+<lastmod>2017-04-12T23:20:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -130,8 +137,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/notes-w2.html</loc>
-<lastmod>2017-03-01T22:10:00+08:06</lastmod>
+<loc>./tag/notes-w3.html</loc>
+<lastmod>2017-03-08T21:35:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -139,6 +146,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>./tag/notes-w5.html</loc>
 <lastmod>2017-03-22T23:25:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/notes-w2.html</loc>
+<lastmod>2017-03-01T22:10:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -153,20 +167,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>./tag/notes-w6.html</loc>
 <lastmod>2017-03-29T22:25:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/notes-w1.html</loc>
-<lastmod>2017-02-22T21:35:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/notes-w8.html</loc>
-<lastmod>2017-04-12T23:20:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
